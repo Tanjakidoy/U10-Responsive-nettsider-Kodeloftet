@@ -4,20 +4,64 @@
     <title>Home</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="script.js"></script>
   </head>
   <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
+    <header class="flexBetween">
+      <h1>Logo</h1>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Projects</li>
+        </ul>
+      </nav>
+    </header>
     <main>
-      <h1>Home page</h1>
+      <section class="flexColCenter">
+        <h1>Hero Section</h1>
+        <p>Introduction</p>
+
+        <div class="redBox"></div>
+      </section>
+      <section>
+        <h2>Selected Projects</h2>
+
+        <div class="projectDivider">
+          <div class="projectCard">
+            <h3>Mitt prosjekt 1</h3>
+            <p>Beskrivelse av prosjekt 1</p>
+          </div>
+
+          <div class="projectCard">
+            <h3>Mitt prosjekt 1</h3>
+            <p>Beskrivelse av prosjekt 1</p>
+          </div>
+
+          <div class="projectCard">
+            <h3>Mitt prosjekt 1</h3>
+            <p>Beskrivelse av prosjekt 1</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>Design Thinking</h2>
+
+        <div class="container">
+          <div class="information">
+            <h3>Noe overskrift</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil animi fugiat quas temporibus repellendus inventore nulla est. Id, nisi quibusdam.</p>
+          </div>
+          <div class="image">
+            <img src="cheeseknight.png" alt="Mr Cheeseknight">
+          </div>
+        </div>
+      </section>
     </main>
+    <footer class="flexColCenter">
+      <p>Laget av Tanja</p>
+      <p>Finn meg på <a href="https://github.com/juliekodehode">github</p>
+    </footer>
   </body>
 </html>
